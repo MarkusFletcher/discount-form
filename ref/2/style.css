@@ -1,0 +1,95 @@
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: 16px;
+}
+
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.steps-form {
+	color: #fff;
+	margin: 50px 0;
+}
+
+.steps-form__wrap {
+	padding: 32px;
+	border-radius: 24px;
+	background-color: #323232;
+}
+
+.steps-form__steps-count {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.steps-form__step-count {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.steps-form__step-count.active {
+	background-color: #007FCE;
+}
+
+.steps-form__step-separator {
+	flex-grow: 2;
+	height: 1px;
+	background-color: #fff;
+}
+
+.steps-form__step {
+	display: none;
+}
+
+.steps-form__step.active {
+	display: block;
+}
+
+.steps-form__body {
+	
+}
+
+.steps-form__content {
+	margin-bottom: 20px;
+}
+
+.steps-form__actions {
+	display: flex;
+	gap: 16px;
+}
+
+.steps-form__btn {
+	flex: 0 1 100%;
+	cursor: pointer;
+	color: #fff;
+	font-size: 16px;
+	padding: 8px 16px;
+	border: none;
+	border-radius: 6px;
+	background-color: #007FCE;
+	transition: background-color .4s ease;
+}
+
+.steps-form__btn:hover,
+.steps-form__btn:focus {
+	background-color: #21A2F1;
+}

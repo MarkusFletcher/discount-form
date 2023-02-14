@@ -1,0 +1,86 @@
+.septic-problems-form-container {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.septic-problems-form {
+	color: #fff;
+}
+
+.septic-problems-form__wrap {
+	padding: 32px;
+	border-radius: 24px;
+	background-color: #323232;
+}
+
+.septic-problems-form__steps-count {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 40px;
+}
+
+.septic-problems-form__step-count {
+	background-color: #000;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.septic-problems-form__step-count.active {
+	background-color: #497C9D;
+}
+
+.septic-problems-form__step-separator {
+	flex-grow: 2;
+	height: 1px;
+	background-color: #fff;
+}
+
+.septic-problems-form__step {
+	display: none;
+}
+
+.septic-problems-form__step.active {
+	display: block;
+}
+
+.septic-problems-form__option {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.septic-problems-form__checkbox {
+	width: 30px;
+	height: 30px;
+	cursor: pointer;
+	margin: 0 !important;
+}
+
+.septic-problems-form__label {
+	margin: 0;
+	cursor: pointer;
+}
+
+.septic-problems-form__input-text {
+	margin-bottom: 20px;
+}
+
+.septic-problems-form__actions {
+	display: flex;
+	gap: 16px;
+}
+
+.septic-problems-form__btn {
+	flex: 0 1 100%;
+	margin: 0 !important;
+}

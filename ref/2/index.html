@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form With Steps</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="steps-form js-steps-form">
+			<div class="steps-form__wrap">
+				<div class="steps-form__steps-count">
+					<div class="steps-form__step-count active" data-step-id="1">1</div>
+					<div class="steps-form__step-separator"></div>
+					<div class="steps-form__step-count" data-step-id="2">2</div>
+					<div class="steps-form__step-separator"></div>
+					<div class="steps-form__step-count" data-step-id="3">3</div>
+				</div>
+				<div class="steps-form__body">
+					<div class="steps-form__step active" data-step-id="1">
+						<div class="steps-form__content">
+							123
+						</div>
+						<div class="steps-form__actions">
+							<button class="steps-form__btn" type="button" data-form-btn="next">Далее</button>
+						</div>
+					</div>
+					<div class="steps-form__step" data-step-id="2">
+						<div class="steps-form__content">
+							123
+						</div>
+						<div class="steps-form__actions">
+							<button class="steps-form__btn" type="button" data-form-btn="pre">Назад</button>
+							<button class="steps-form__btn" type="button" data-form-btn="next">Далее</button>
+						</div>
+					</div>
+					<div class="steps-form__step" data-step-id="3">
+						<div class="steps-form__content">
+							123
+						</div>
+						<div class="steps-form__actions">
+							<button class="steps-form__btn" type="button" data-form-btn="pre">Назад</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
