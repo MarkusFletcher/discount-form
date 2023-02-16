@@ -14,7 +14,7 @@
 			<svg class="modal__close js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 				<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
 			</svg>
-			<div class="discount-form">
+			<div class="discount-form js-discount-form">
 				<div class="discount-form__header">
 					<div class="discount-form__title">
 						<svg viewBox="0 0 24 24" class="discount-form__title-icon">
@@ -24,7 +24,7 @@
 					</div>
 				</div>
 				<div class="discount-form__body">
-					<div class="discount-form__step active">
+					<div class="discount-form__step active" data-step-id="1">
 						<div class="discount-form__question-title">Выберите форму</div>
 						<div class="discount-form__answers answers answers--images">
 							<label class="answer-image control control--radio control--image">
@@ -61,7 +61,7 @@
 							</label>
 						</div>
 					</div>
-					<div class="discount-form__step active">
+					<div class="discount-form__step" data-step-id="2">
 						<div class="discount-form__question-title">Выберите форму</div>
 						<div class="discount-form__answers answers answers--variants">
 							<label class="answer-variant control control--radio">80х80 см
@@ -78,23 +78,69 @@
 							</label>
 						</div>
 					</div>
+					<div class="discount-form__step" data-step-id="3">
+						<div class="discount-form__question-title">Выберите форму</div>
+						<div class="discount-form__answers answers answers--images">
+							<label class="answer-image control control--radio control--image">
+								<div class="answer-image__img-wrap">
+									<img src="images/test.jpg" alt="" class="answer-image__img">
+								</div>
+								<div class="answer-image__title">Квадратная</div>
+								<input type="radio" name="radio" value="80х80 см"/>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="answer-image control control--radio control--image">
+								<div class="answer-image__img-wrap">
+									<img src="images/test.jpg" alt="" class="answer-image__img">
+								</div>
+								<div class="answer-image__title">Квадратная</div>
+								<input type="radio" name="radio" value="80х80 см"/>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="answer-image control control--radio control--image">
+								<div class="answer-image__img-wrap">
+									<img src="images/test.jpg" alt="" class="answer-image__img">
+								</div>
+								<div class="answer-image__title">Квадратная</div>
+								<input type="radio" name="radio" value="80х80 см"/>
+								<div class="control__indicator"></div>
+							</label>
+							<label class="answer-image control control--radio control--image">
+								<div class="answer-image__img-wrap">
+									<img src="images/test.jpg" alt="" class="answer-image__img">
+								</div>
+								<div class="answer-image__title">Квадратная</div>
+								<input type="radio" name="radio" value="80х80 см"/>
+								<div class="control__indicator"></div>
+							</label>
+						</div>
+					</div>
+					<div class="discount-form__step" data-step-id="">
+						<div class="discount-form__question-title">Выберите форму</div>
+						<div class="discount-form__answers answers answers--text">
+							<label class="answer-">
+								<div class="answer-__title">Квадратная</div>
+								<input type="text" name=""/>
+							</label>
+							
+						</div>
+					</div>
 				</div>
 				<div class="discount-form__footer">
 					<div class="discount-form__actions">
-						<button class="discount-form__button btn btn-default js-discount-form-prew">
+						<button class="discount-form__button btn btn-default js-discount-form-prev" data-form-btn="prev">
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
-						<button class="discount-form__button btn btn-default js-discount-form-next">
+						<button class="discount-form__button btn btn-default js-discount-form-next" data-form-btn="next">
 							Далее 
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
 					</div>
 					<div class="discount-form__steps-count">
-						<div class="discount-form__step-count" data-discount-form-step="1"></div>
-						<div class="discount-form__step-count action" data-discount-form-step="2"></div>
-						<div class="discount-form__step-count" data-discount-form-step="3"></div>
-						<div class="discount-form__step-count" data-discount-form-step="4"></div>
-						<div class="discount-form__step-count" data-discount-form-step="5"></div>
+						<div class="discount-form__step-count active" data-step-id="1"></div>
+						<div class="discount-form__step-count" data-step-id="2"></div>
+						<div class="discount-form__step-count" data-step-id="3"></div>
+						<div class="discount-form__step-count" data-step-id="4"></div>
 					</div>
 				</div>
 			</div>
