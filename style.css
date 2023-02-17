@@ -167,6 +167,9 @@ button {
 	gap: 12px;
 }
 
+.discount-form__feedback {
+}
+
 .answer-image {
 	border-radius: 4px;
 	background-color: #D9D9D9;
@@ -224,6 +227,48 @@ button {
 	border: 1px solid #D9D9D9;
 	border-radius: 2px;
 }
+
+.feedback-form {
+	display: grid;
+	grid-template-columns: 5fr 3fr;
+}
+
+.feedback-form__info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 80px;
+}
+
+.feedback-form__body {
+	height: 380px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.feedback-form__label {
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #3E3E3E;
+	margin-bottom: 6px;
+}
+
+.feedback-form__input {
+	width: 100%;
+	font-size: 16px;
+	padding: 10px;
+	margin-bottom: 16px;
+	border: 1px solid #333333;
+}
+
+.feedback-form__button {
+	font-size: 16px;
+	width: 100%;
+	height: 42px;
+}
+
 
 
 

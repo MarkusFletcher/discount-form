@@ -115,23 +115,34 @@
 							</label>
 						</div>
 					</div>
-					<div class="discount-form__step" data-step-id="">
-						<div class="discount-form__question-title">Выберите форму</div>
-						<div class="discount-form__answers answers answers--text">
-							<label class="answer-">
-								<div class="answer-__title">Квадратная</div>
-								<input type="text" name=""/>
-							</label>
-							
+					<div class="discount-form__step" data-step-id="4">
+						<div class="discount-form__feedback feedback-form">
+							<div class="feedback-form__info">
+								<h3 style="display: block;margin-bottom: 10px">Место для надписи</h3>
+								<p>Здесь могла бы быть ваша реклама</p>
+							</div>
+							<div class="feedback-form__body">
+								<label class="feedback-form__field">
+									<div class="feedback-form__label">Введите имя</div>
+									<input class="feedback-form__input" type="text" name="name" placeholder="Имя"/>
+								</label>
+								<label class="feedback-form__field">
+									<div class="feedback-form__label">Введите телефон</div>
+									<input class="feedback-form__input" type="tel" name="phone" placeholder="+7 (900) 000-00-00"/>
+								</label>
+								<button class="feedback-form__button btn btn-default">
+									Submit
+								</button>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="discount-form__footer">
 					<div class="discount-form__actions">
-						<button class="discount-form__button btn btn-default js-discount-form-prev" data-form-btn="prev">
+						<button class="discount-form__button btn btn-default" data-form-btn="prev">
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
-						<button class="discount-form__button btn btn-default js-discount-form-next" data-form-btn="next">
+						<button class="discount-form__button btn btn-default" data-form-btn="next">
 							Далее 
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
