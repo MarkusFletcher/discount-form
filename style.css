@@ -53,6 +53,10 @@ button {
 	transition: .3s all;
 }
 
+.hidden {
+	display: none;
+}
+
 .modal {
 	width: 100%;
 	max-width: 882px;
@@ -269,7 +273,21 @@ button {
 	height: 42px;
 }
 
-
+.open-discount-form {
+	position: fixed;
+	left: 20px;
+	bottom: 20px;
+	border: none;
+	height: 40px;
+	border-radius: 20px;
+	background-color: #15CBD2;
+	padding-left: 40px;
+	padding-right: 40px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
 
 
 
