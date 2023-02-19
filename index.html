@@ -9,12 +9,15 @@
 	<title>Document</title>
 </head>
 <body>
-	<div class="js-overlay-modal overlay">
+	<button class="open-discount-form js-open-discount-form">
+		Открыть форму
+	</button>
+	<div class="js-overlay-modal overlay hidden">
 		<div class="modal">
-			<svg class="modal__close js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<svg class="modal__close js-close-discount-form" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
 				<path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/>
 			</svg>
-			<div class="discount-form js-discount-form">
+			<form class="discount-form js-discount-form">
 				<div class="discount-form__header">
 					<div class="discount-form__title">
 						<svg viewBox="0 0 24 24" class="discount-form__title-icon">
@@ -32,7 +35,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="1" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -40,7 +43,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="1" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -48,7 +51,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="1" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -56,7 +59,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="1" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 						</div>
@@ -65,15 +68,15 @@
 						<div class="discount-form__question-title">Выберите форму</div>
 						<div class="discount-form__answers answers answers--variants">
 							<label class="answer-variant control control--radio">80х80 см
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="2" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-variant control control--radio">80х80 см
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="2" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-variant control control--radio">80х80 см
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="2" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 						</div>
@@ -86,7 +89,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="3" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -94,7 +97,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="3" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -102,7 +105,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="3" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 							<label class="answer-image control control--radio control--image">
@@ -110,7 +113,7 @@
 									<img src="images/test.jpg" alt="" class="answer-image__img">
 								</div>
 								<div class="answer-image__title">Квадратная</div>
-								<input type="radio" name="radio" value="80х80 см"/>
+								<input type="radio" name="3" value="80х80 см"/>
 								<div class="control__indicator"></div>
 							</label>
 						</div>
@@ -130,7 +133,7 @@
 									<div class="feedback-form__label">Введите телефон</div>
 									<input class="feedback-form__input" type="tel" name="phone" placeholder="+7 (900) 000-00-00"/>
 								</label>
-								<button class="feedback-form__button btn btn-default">
+								<button class="feedback-form__button btn btn-default" type="submit">
 									Submit
 								</button>
 							</div>
@@ -139,10 +142,10 @@
 				</div>
 				<div class="discount-form__footer">
 					<div class="discount-form__actions">
-						<button class="discount-form__button btn btn-default" data-form-btn="prev">
+						<button class="discount-form__button btn btn-default" data-form-btn="prev" type="button">
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
-						<button class="discount-form__button btn btn-default" data-form-btn="next">
+						<button class="discount-form__button btn btn-default" data-form-btn="next" type="button">
 							Далее 
 							<svg viewBox="0 0 24 24" class="discount-form__button-icon"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z" stroke-width="0" fill-rule="nonzero"></path></svg>
 						</button>
@@ -154,7 +157,7 @@
 						<div class="discount-form__step-count" data-step-id="4"></div>
 					</div>
 				</div>
-			</div>
+			</form>
 		</div>
 	</div>
 
